@@ -11,3 +11,4 @@ public class TrabalhoApplication {
 	}
 
 }
+git add .
