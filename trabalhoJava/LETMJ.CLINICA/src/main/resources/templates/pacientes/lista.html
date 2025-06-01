@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pacientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="fragments/layout :: cabecalho"></div>
+
+<div class="container mt-4">
+    <h2>Lista de Pacientes</h2>
+    <a class="btn btn-primary mb-3" th:href="@{/pacientes/novo}">Novo Paciente</a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Data Nascimento</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="paciente : ${pacientes}">
+            <td th:text="${paciente.nome}">Nome</td>
+            <td th:text="${paciente.cpf}">CPF</td>
+            <td th:text="${paciente.dataNascimento}">Data Nascimento</td>
+            <td th:text="${paciente.telefone}">Telefone</td>
+            <td>
+                <a th:href="@{'/pacientes/editar/' + ${paciente.id}}" class="btn btn-sm btn-warning">Editar</a>
+                <a th:href="@{'/pacientes/excluir/' + ${paciente.id}}" class="btn btn-sm btn-danger">Excluir</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div th:replace="fragments/layout :: rodape"></div>
+</body>
+</html>

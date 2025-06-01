@@ -1,0 +1,16 @@
+<header th:fragment="cabecalho">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
+        <a class="navbar-brand" th:href="@{/}">Clínica</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" th:href="@{/pacientes}">Pacientes</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/medicos}">Médicos</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/agendas}">Agenda</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<footer th:fragment="rodape" class="text-center py-3 bg-light">
+    <p>&copy; 2025 Clínica - Todos os direitos reservados.</p>
+</footer>
