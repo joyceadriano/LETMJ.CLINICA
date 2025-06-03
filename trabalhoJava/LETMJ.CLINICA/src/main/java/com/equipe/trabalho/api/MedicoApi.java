@@ -1,7 +1,7 @@
-package com.equipe.joice.trabalho.api;
+package com.equipe.trabalho.api;
 
-import com.equipe.joice.trabalho.model.Medico;
-import com.equipe.joice.trabalho.service.MedicoService;
+import com.equipe.trabalho.model.Medico;
+import com.equipe.trabalho.service.MedicoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

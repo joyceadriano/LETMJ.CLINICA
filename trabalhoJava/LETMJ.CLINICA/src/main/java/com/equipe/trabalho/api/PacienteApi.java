@@ -1,7 +1,7 @@
-package com.equipe.joice.trabalho.api;
+package com.equipe.trabalho.api;
 
-import com.equipe.joice.trabalho.model.Paciente;
-import com.equipe.joice.trabalho.service.PacienteService;
+import com.equipe.trabalho.model.Paciente;
+import com.equipe.trabalho.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

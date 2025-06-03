@@ -1,7 +1,7 @@
-package com.equipe.joice.trabalho.api;
+package com.equipe.trabalho.api;
 
-import com.equipe.joice.trabalho.model.Agenda;
-import com.equipe.joice.trabalho.service.AgendaService;
+import com.equipe.trabalho.model.Agenda;
+import com.equipe.trabalho.service.AgendaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
